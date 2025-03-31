@@ -1,6 +1,20 @@
-body {
-    background-color: brown;
-}
+/* 
+
+ Flex grow 
+
+ es una de las tres propiedades que recibe los elementos (items) contenidos en un contenedor (container) con display: flex
+
+ Flex-grow -> Define cuanto puede crecer un elemento si hay espacio isponible en un contenedor. 
+
+ * El valo por defecto es 0: No crece 
+ * Si le damos un vlor de 1: Crecera para ocupar el espacio disponible.
+ * Podemos dar valores mayores a 1, entre mas alto el valor el elemento ocupara mayor espaci disponible.
+ * Si varios elementos tienen distintos valores, el espacio se reparte proporcionalmente.
+
+
+
+*/
+
 
 *{
     margin: 0;
@@ -10,11 +24,15 @@ body {
   
   body{
     font-family: sans-serif;
-    background-color: plum;
+    background-color: rgb(95, 6, 13)124, 54, 124;
   }
   
   .container {
     display: flex;
+    flex-direction: row-reverse;
+    flex-direction: column;
+
+    height: 700px;
     background-color: darkslateblue;
   }
   
@@ -22,21 +40,21 @@ body {
     flex-grow: 0; /* Defaul no crecen */
     flex-grow: 1; /* Factor de crecimiento */
     border: 1px solid lightseagreen;
-    background-color: deeppink;
+    background-color: dodgerblue;
   }
   
   .item-1 {
-    flex-grow: 0;
+    flex-grow: 0; /* no crece */
   }
   
   .item-2 {
-    flex-grow: 1;
+    flex-grow: 1; /* crece con un factor de 1 */
   }
   
   .item-3 {
-    flex-grow: 2;
+    flex-grow: 2; /* crece con un factor de 2 */
   }
   
   .item-4 {
-    flex-grow: 3;
+    flex-grow: 3; /* crece con un factor de 3 */
   }
