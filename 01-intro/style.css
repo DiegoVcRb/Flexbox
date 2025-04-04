@@ -1,0 +1,27 @@
+body {
+background-color: cadetblue;
+  }
+  
+  .container {
+    padding: 1rem;
+    background-color: black;
+  
+    /* Habilitamos Flexbox */
+    display:flex; 
+  }
+  
+  .item {
+    background-color: rgb(35, 134, 131);
+  }
+  
+  .tem-flex {
+    background-color:rgb(2, 101, 201);
+  
+    /* Habilitamos Flexbox en un elemento hijo */
+    display:flex;
+  }
+  
+  .item-flex > h2 {
+    color: snow;
+    background-color: darkslategray;
+  }
